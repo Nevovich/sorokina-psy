@@ -1,0 +1,39 @@
+header
+    margin-bottom: 20px
+
+.nav
+    background-color: $gray-bg
+    border-radius: 10px
+    padding: 10px 0
+    margin-top: 15px
+    justify-content: space-around
+    &bar
+        padding: 20px 0
+        &-brand
+            font-family: 'Montserrat', sans-serif
+            font-weight: 700
+            color: $blue
+            &:hover
+                color: $blue
+    & li
+        margin: 0
+        a
+            font-weight: bold
+            color: $blue
+            &:hover
+                text-decoration: none
+@media screen and (min-width: 576px)
+    .nav
+        justify-content: center
+        & li
+            margin-left: 0
+            margin-right: 11px
+@media screen and (min-width: 992px)
+    .nav
+        background-color: transparent
+        padding: 0
+        margin-top: 0
+        justify-content: flex-start
+        & li
+            margin-left: 28px
+            margin-right: 0

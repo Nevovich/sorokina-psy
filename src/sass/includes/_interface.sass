@@ -1,0 +1,43 @@
+// Colors
+$blue: #556B9F
+$orange: #F3A500
+$gray: #505050
+$gray-bg: #EEE
+    
+    
+
+    
+*
+    box-sizing: border-box
+html
+    font-family: 'Roboto', sans-serif
+    font-size: 18px
+a
+    text-decoration: none
+    color: $blue
+
+
+
+
+
+// Хлебные крошки
+.breadcrumb-item+.breadcrumb-item:before
+   content: '>'
+.breadcrumb
+    background-color: transparent
+    color: #666
+    margin-bottom: 0
+    padding-bottom: 0
+    padding-left: 0
+    & span
+        color: Подзаголовок (по желанию), а лучше - сделать подтему
+        font-size: 14px
+    & .active
+        color: black
+.title
+    font-family: 'Montserrat', sans-serif !important
+    font-weight: bold
+    font-size: 35px
+    color: $gray
+.subtitle
+    color: #666
