@@ -47,11 +47,52 @@
                     </nav>
                     <h1 class="title">Название блоговой странички, причем, допустим, что он написан в две строчки</h1>
                     <span class="subtitle">Подзаголовок (по желанию), а лучше - сделать подтему</span>
+                    <div class="d-flex justify-content-between align-items-start align-items-md-center mt-2">
+                        <div class="tags mb-3 mb-md-0 d-md-block d-flex flex-column justify-content-between text-center text-md-left">
+                            <a href="#" class="tag-item">Жизнь</a>
+                            <a href="#" class="tag-item">Любовь</a>
+                            <a href="#" class="tag-item">Насущное</a>
+                            <a class="tag-date"><img src="img/post/calendar.svg" alt="calendar icon">18.10.2004</a>
+                        </div>
+                        <div class="ya-share2" data-curtain data-size="l" data-shape="round" data-limit="3" data-services="vkontakte,facebook,odnoklassniki,telegram,viber,whatsapp"></div>
+                    </div>
                 </div>
                 <!-- PRIMARY End ========================= -->
-                <div class="col-12 col-lg-3 sidebar">
-                    <div class="widget">бабубэ</div>
+                <!-- Sidebar ========================= -->
+                <div class="col-12 col-lg-3 sidebar mt-5 mt-lg-0">
+                    <div class="widget widget_search">
+                        <form action="#" class="search-form">
+                            <input class="search-input" type="text" onfocus="if (this.value == 'Начните искать') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Начните искать'; }" value="Начните искать">
+                            <button type="submit" class="search-submit"><img src="img/widget/search-icon.svg" alt="search-icon"></button>
+                        </form>
+                    </div>
+                    <div class="widget widget_tag_cloud">
+                        <h5 class="widgettitle">Tags</h5>
+                        <div class="tagcloud">
+                            <a href="#" class="tag-cloud-link">Designs</a>
+                            <a href="#" class="tag-cloud-link">Без рубрики</a>
+                            <a href="#" class="tag-cloud-link">New</a>
+                        </div>
+                    </div>
+                    <div class="widget widget_recent_entries">
+                        <h5 class="widgettitle">Свежие записи</h5>
+                        <ul>
+                            <li>
+                                <!-- РЕГИСТРИРУЕМ миниатюры для сайдбара, называем прям 'sidebar' -->
+                                <!-- CODE НЕ ВЫРЕЗАЕМ, вставляем в sidebar.php прям так, выводим с помощью the_post_thumbnail('sidebar') -->
+                                <img src="img/widget/post-img.jpg" alt="">
+                                <a href="#">Просто название блока с текстом....</a>
+                                <span class="post-date">26.12.2020</span>
+                            </li>
+                            <li>
+                                <img src="img/widget/post-img.jpg" alt="">
+                                <a href="#">Просто название блока с текстом....</a>
+                                <span class="post-date">18.12.2020</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+                <!-- Sidebar end ========================= -->
             </div>
         </div>
     </main>
@@ -61,6 +102,7 @@
     </footer>
 <!-- Wp delete -->
 <script src="js/jquery.min.js"></script>
+<script src="https://yastatic.net/share2/share.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
 <!-- Wp delete end -->

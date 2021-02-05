@@ -1,0 +1,83 @@
+
+    
+// Widget
+.widget
+    text-align: center
+    margin-bottom: 25px
+    & h5
+        color: $blue
+        margin-bottom: 20px
+    // СТИЛИ ДЛЯ ВИДЖЕТА С ПОСЛЕДНИМИ ЗАПИСЯМИ
+    & ul
+        padding-inline-start: 0
+        & li
+            margin-bottom: 15px
+            list-style-type: none;
+            display: flex;
+            flex-direction: column
+            align-items: center
+            & a
+                margin-top: 10px
+                margin-bottom: 10px
+                color: $gray
+                font-weight: bold
+                &:hover
+                    text-decoration: none
+.search
+    &-form
+        border: 2px $orange solid
+        border-radius: 10px
+        display: flex
+        justify-content: space-between
+        padding: 15px 20px
+    &-input
+        border: 0
+        outline: 0 !important
+        width: 80%
+        color: $gray
+    &-submit
+        border: 0
+        padding: 0 !important
+        background-color: transparent
+.tagcloud
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    & a
+        padding: 8px 16px
+        border-radius: 7px
+        margin-right: 10px
+        margin-top: 10px
+        background-color: #DDD
+        color: $gray
+        &:hover
+            text-decoration: none
+// Стили для постов в виджетах
+.post
+    &-date
+        background-color: $orange
+        color: black
+        padding: 2px 4px
+        border-radius: 7px
+        font-size: 14px;
+        &-img
+            margin-right: 5px
+            transform: translateY(-2px)
+@media screen and (min-width: 576px)
+    .tagcloud
+        display: block
+@media screen and (min-width: 768px)
+    .widget
+        & ul
+            display: flex
+            justify-content: center
+            flex-wrap: wrap
+            & li
+                margin-right: 20px
+@media screen and (min-width: 992px)
+    .tagcloud
+        display: flex
+    .widget
+        & ul
+            & li
+                margin-right: 0px
