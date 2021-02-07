@@ -49,40 +49,83 @@
                             <span class="breadcrumb-item active" aria-current="page">Data</span>
                         </ol>
                     </nav>
-                    <h1 class="title">Название блоговой странички, причем, допустим, что он написан в две строчки</h1>
-                    <span class="subtitle">Подзаголовок (по желанию), а лучше - сделать подтему</span>
-                    <div class="d-flex justify-content-between align-items-start align-items-md-center mt-2">
-                        <div class="tags mr-3 mr-md-0 mb-3 mb-md-0 d-md-block d-flex flex-column justify-content-between text-center text-md-left">
-                            <a href="#" class="tag tag-item">Жизнь</a>
-                            <a href="#" class="tag tag-item">Любовь</a>
-                            <a href="#" class="tag tag-item">Насущное</a>
-                            <a class="tag tag-orange"><img src="img/post/calendar.svg" alt="calendar icon">18.10.2004</a>
+                    <h1 class="title">Статьи, написанные мной</h1>
+                    <!-- POST LIST ITEM loop ========================= -->
+                    <article class="post-list-item">
+                        <h3 class="title title-sm"><a href="#">Заголовок 3-го уровня</a></h3>
+                        <div class="post-img mt-3">
+                            <a href="#"><img src="img/post/image.jpg"></a>
                         </div>
-                        <div class="ya-share2" data-curtain data-size="l" data-shape="round" data-limit="3" data-services="vkontakte,facebook,odnoklassniki,telegram,viber,whatsapp"></div>
+                        <div class="post-excerpt mt-3">
+                            <p>Сновидение начинает аутотренинг. Как отмечает Жан Пиаже, боль осмысляет дуализм. Аподейктика недоступно выбирает феноменологический гендер, однако Зигварт считал критерием истинности необходимость и общезначимость, для которых нет никакой опоры в объективном мире. Лидерство категорически представляет собой латентный контраст. Интеллект, как принято считать, индивидуально преобразует знак. Освобождение поразительно.</p>
+                        </div>
+                        <div class="mt-2">
+                            <span class="tag tag-orange">
+                                <img src="img/post/calendar.svg" alt="calendar icon">
+                                18.10.2004
+                                <!-- the_date("d.m.Y") -->
+                            </span>
+                        </div>
+                        <!-- POST excerpt End ========================= -->
+                    </article>
+                    <!-- POST LIST ITEM End ========================= -->
+                    <!-- POST LIST ITEM loop ========================= -->
+                    <article class="post-list-item">
+                        <h3 class="title title-sm"><a href="#">Заголовок 3-го уровня</a></h3>
+                        <div class="post-img mt-3">
+                            <a href="#"><img src="img/post/image.jpg"></a>
+                        </div>
+                        <div class="post-excerpt mt-3">
+                            <p>Сновидение начинает аутотренинг. Как отмечает Жан Пиаже, боль осмысляет дуализм. Аподейктика недоступно выбирает феноменологический гендер, однако Зигварт считал критерием истинности необходимость и общезначимость, для которых нет никакой опоры в объективном мире. Лидерство категорически представляет собой латентный контраст. Интеллект, как принято считать, индивидуально преобразует знак. Освобождение поразительно.</p>
+                        </div>
+                        <div class="mt-2">
+                            <span class="tag tag-orange">
+                                <img src="img/post/calendar.svg" alt="calendar icon">
+                                18.10.2004
+                                <!-- the_date("d.m.Y") -->
+                            </span>
+                        </div>
+                        <!-- POST excerpt End ========================= -->
+                    </article>
+                    <!-- POST LIST ITEM End ========================= -->
+                    <!-- POST LIST ITEM loop ========================= -->
+                    <article class="post-list-item">
+                        <h3 class="title title-sm"><a href="#">Заголовок 3-го уровня</a></h3>
+                        <div class="post-img mt-3">
+                            <a href="#"><img src="img/post/image.jpg"></a>
+                        </div>
+                        <div class="post-excerpt mt-3">
+                            <p>Сновидение начинает аутотренинг. Как отмечает Жан Пиаже, боль осмысляет дуализм. Аподейктика недоступно выбирает феноменологический гендер, однако Зигварт считал критерием истинности необходимость и общезначимость, для которых нет никакой опоры в объективном мире. Лидерство категорически представляет собой латентный контраст. Интеллект, как принято считать, индивидуально преобразует знак. Освобождение поразительно.</p>
+                        </div>
+                        <div class="mt-2">
+                            <span class="tag tag-orange">
+                                <img src="img/post/calendar.svg" alt="calendar icon">
+                                18.10.2004
+                                <!-- the_date("d.m.Y") -->
+                            </span>
+                        </div>
+                        <!-- POST excerpt End ========================= -->
+                    </article>
+                    <!-- POST LIST ITEM End ========================= -->
+
+                    <!-- add_filter('navigation_markup_template', 'my_navigation_template', 10, 2 );
+                    function my_navigation_template( $template, $class ){
+                    return '
+                    <nav class="navigation %1$s" role="navigation">
+                        <div class="nav-links">%3$s</div>
+                    </nav>    
+                    ';
+                    } -->
+
+                    <div class="pagination-wrapper d-flex justify-content-center">
+                        <nav class="pagination" role="navigation">
+                            <div class="nav-links">
+                                <span aria-current="page" class="page-numbers current">1</span>
+                                <a class="page-numbers" href="#">2</a>
+                                <a class="next page-numbers" href="#">Далее</a>
+                            </div>
+                        </nav>
                     </div>
-                    <div class="post-img">
-                        <img src="img/post/image.jpg">
-                    </div>
-                    <div class="post-content">
-                        <p>Сновидение начинает аутотренинг. Как отмечает Жан Пиаже, боль осмысляет дуализм. Аподейктика недоступно выбирает феноменологический гендер, однако Зигварт считал критерием истинности необходимость и общезначимость, для которых нет никакой опоры в объективном мире. Лидерство категорически представляет собой латентный контраст. Интеллект, как принято считать, индивидуально преобразует знак. Освобождение поразительно.</p>
-                        <p>Сновидение начинает аутотренинг. Как отмечает Жан Пиаже, боль осмысляет дуализм. Аподейктика недоступно выбирает феноменологический гендер, однако Зигварт считал критерием истинности необходимость и общезначимость, для которых нет никакой опоры в объективном мире. Лидерство категорически представляет собой латентный контраст. Интеллект, как принято считать, индивидуально преобразует знак. Освобождение поразительно.</p>
-                        <p>Сновидение начинает аутотренинг. Как отмечает Жан Пиаже, боль осмысляет дуализм. Аподейктика недоступно выбирает феноменологический гендер, однако Зигварт считал критерием истинности необходимость и общезначимость, для которых нет никакой опоры в объективном мире. Лидерство категорически представляет собой латентный контраст. Интеллект, как принято считать, индивидуально преобразует знак. Освобождение поразительно.</p>
-                        <p>Сновидение начинает аутотренинг. Как отмечает Жан Пиаже, боль осмысляет дуализм. Аподейктика недоступно выбирает феноменологический гендер, однако Зигварт считал критерием истинности необходимость и общезначимость, для которых нет никакой опоры в объективном мире. Лидерство категорически представляет собой латентный контраст. Интеллект, как принято считать, индивидуально преобразует знак. Освобождение поразительно.</p>
-                        <p>Сновидение начинает аутотренинг. Как отмечает Жан Пиаже, боль осмысляет дуализм. Аподейктика недоступно выбирает феноменологический гендер, однако Зигварт считал критерием истинности необходимость и общезначимость, для которых нет никакой опоры в объективном мире. Лидерство категорически представляет собой латентный контраст. Интеллект, как принято считать, индивидуально преобразует знак. Освобождение поразительно.</p>
-                    </div>
-                    <div class="text-right mt-5">
-                        <span class="tag tag-orange">
-                            <img src="img/post/author.png" alt="author icon">
-                            Ирина Сорокина
-                            <!-- the_author() -->
-                        </span>
-                    </div>
-                    <!-- POST CONTENT End ========================= -->
-                    <!-- <div id="vk_comments"></div> -->
-                    <!-- https://wpruse.ru/finty-ushami/kommentarii-vkontakte-na-sajt-wordpress-bez-plaginov/ -->
-                    <script type="text/javascript">
-                    // VK.Widgets.Comments("vk_comments", {limit: 10, attach: false});
-                    </script>
                 </div>
                 <!-- PRIMARY End ========================= -->
                 <!-- Sidebar ========================= -->
@@ -161,7 +204,7 @@
                     </li>
                 </ul>
                 <ul class="footer-nav-right col-12 col-md-4">
-                     <h5>Ирина Сорокина</h5>
+                        <h5>Ирина Сорокина</h5>
                     <li>
                         <a>Частный психолог в Нефтеюганске</a>
                     </li>
